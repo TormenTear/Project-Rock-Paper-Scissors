@@ -66,7 +66,7 @@ function game(playerChoice){
 }
 
 // On click events!
-  rock.addEventListener('click', () => {
+  rock.addEventListener('click', () => { 
     game('rock');
   });
   paper.addEventListener('click', () => {

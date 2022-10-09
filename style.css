@@ -1,0 +1,23 @@
+
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(84, 230, 27);
+  border: 2px red solid;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container{ 
+  height: 100vh;
+  border: 2px solid green;
+}
+
+img{ 
+  max-width: 100px;
+  max-height: 100px;
+}
