@@ -18,12 +18,8 @@ function compChoice () {
 // Function that plays a round!
 function playRound(playerSelection, compSelection){
   
-  console.log(`You selected: "${playerSelection}".`);
-  console.log(`Computer selected: "${compSelection}".`);
-
   // Tie 
   if(playerSelection === compSelection) {
-    console.log('You tied! Both picked same symbol!');
     result.innerHTML = 'You tied! Both picked same symbol!';
     result.style.color = 'white';
   }
@@ -31,12 +27,10 @@ function playRound(playerSelection, compSelection){
   // Rock beats scissors 
   else if (playerSelection === 'rock' && compSelection ==='scissors'){
     playerScore++;
-    console.log('You won, rock smashes scissors!');
     result.innerHTML = 'You won, rock smashes scissors!';
     result.style.color = 'green';
   } else if (playerSelection === 'scissors' && compSelection === 'rock'){
     compScore++;
-    console.log('You lose, rock smashes scissors!');
     result.innerHTML = 'You lose, rock smashes scissors!';
     result.style.color = 'red';
   }
@@ -44,12 +38,10 @@ function playRound(playerSelection, compSelection){
   // Paper beats rock!
   else if (playerSelection === 'paper' && compSelection === 'rock'){
     playerScore++;
-    console.log('You won, paper covers rock!');
     result.innerHTML = 'You won, paper covers rock!';
     result.style.color = 'green';
   } else if (playerSelection === 'rock' && compSelection === 'paper'){
     compScore++;
-    console.log('You lose, paper covers rock!');
     result.innerHTML = 'You lose, paper covers rock!';
     result.style.color = 'red';
   }
@@ -57,17 +49,14 @@ function playRound(playerSelection, compSelection){
   // Scissors beats paper!
   else if (playerSelection === 'scissors' && compSelection === 'paper'){
     playerScore++;
-    console.log('You won, scissors cuts paper!');
     result.innerHTML = 'You won, scissors cuts paper!';
     result.style.color = 'green';
   } else if (playerSelection === 'paper' && compSelection === 'scissors'){
     compScore++;
-    console.log('You lose, scissors cuts paper!');
     result.innerHTML = 'You lose, scissors cuts paper!';
     result.style.color = 'red';
   }
-  console.log(playerScore, compScore);
-  score.innerHTML = `PLAYER:&nbsp; ${playerScore}<span>VS</span>${compScore}&nbsp; :COMPUTER`;
+    score.innerHTML = `PLAYER:&nbsp; ${playerScore}<span>VS</span>${compScore}&nbsp; :COMPUTER`;
 
   if(playerScore == 5){
     result.innerHTML = 'Congratulations, you won the duel!';
