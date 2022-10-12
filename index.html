@@ -8,12 +8,21 @@
   <title>Rock Paper Scissors - Console play (WIP!)</title>
 </head>
 <body>
+  <h1>Rock Paper Scissors!</h1>
   <div class="container">
-    <h1>Rock Paper Scissors!</h1>
+    
     <div class="selectors">
-      <img id="rock" src="./img/rock.png" alt="rock image">
-      <img id="paper" src="./img/paper.png" alt="paper image">
-      <img id="scissors" src="./img/scissors.png" alt="scissors image">
+      <div class="images">
+        <img id="rock" src="./img/rock.png" alt="rock image">
+        <img id="paper" src="./img/paper.png" alt="paper image">
+        <img id="scissors" src="./img/scissors.png" alt="scissors image">
+      </div>
+      <p class="rules">To start the game choose one symbol from above!
+        The rules are simple, first to win 5 rounds win the game!
+        Rock beats scissors, scissors beats paper and paper beats rock!
+      </p>
+      <p id="result">Choose a symbol to start the game!</p>
+      <p id="score">PLAYER:&nbsp; 0<span>VS</span>0&nbsp; :COMPUTER</p>
     </div>
   </div> 
   <script src="script.js"></script>

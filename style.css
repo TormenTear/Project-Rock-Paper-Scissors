@@ -1,18 +1,42 @@
 
 
 body {
+  display:flex;
+  flex-direction: column;
   height: 100vh;
   margin: 0;
   background-color: rgb(84, 230, 27);
   border: 2px red solid;
   border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+img:hover{
+  transform: scale(1.05);
+}
+
+.images{
+  margin-top: 10px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  overflow: hidden;
+  gap: 10px;
+}
+
+.selectors{
+  max-width: 450px;
+}
+
+p{
+  text-align: center;
+  font-size: 18px;
 }
 
 .container{ 
+  display: flex;
+  justify-content: center;
   height: 100vh;
   border: 2px solid green;
 }
@@ -20,4 +44,10 @@ body {
 img{ 
   max-width: 100px;
   max-height: 100px;
+}
+
+#score {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
 }
