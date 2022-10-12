@@ -5,6 +5,7 @@ const paper = document.getElementById('paper');
 const scissors = document.getElementById('scissors');
 const result = document.getElementById('result');
 const score = document.getElementById('score');
+const reload = document.getElementById('reload');
 
 // Computer random selection from array!
 
@@ -71,9 +72,13 @@ function playRound(playerSelection, compSelection){
   if(playerScore == 5){
     result.innerHTML = 'Congratulations, you won the duel!';
     result.style.color = 'green';
-  } else if(compScore == 5) {
+    reload.innerHTML = 'Reload the page to play again!';
+    reload.style.color = 'blue';
+  } else if(compScore == 5){
     result.innerHTML = 'Ooof, you lost the duel, try again!';
     result.style.color = 'red';
+    reload.innerHTML = 'Reload the page to play again!';
+    reload.style.color = 'blue';
   }
 }
 
